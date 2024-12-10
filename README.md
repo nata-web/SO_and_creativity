@@ -4,7 +4,7 @@ This repository contains the code used for the paper <b>"On the Use of Associati
 ## Content:
 
 * **SO_base.py** - Main file. Uses the custom containers in *containers.py*, the parameters in *paramfiles/modularprob.py*, and calls for *SO_base_FUNC.py* to run the simulations. Calls for *SO_base_plots.py* to generate figures 2-9 in the paper. 
-* **SO_base_plots.py** - Calls for *SO_for_SAT.py* and *borders.py*, and contains various plot functions to generate figures 1-4.
+* **SO_base_plots.py** - Calls for *SO_for_SAT.py* and *borders.py*, and contains various plot functions to generate figures 2-9.
 * **SO_base_FUNC.py** - Calls for *hebbclean.F90* to run the simulation in FORTRAN. Contains functions from [SO-scaled-up](https://github.com/nata-web/SO-scaled-up/tree/main) to generate random weight matrices.
 * **hebbclean.F90** - Contains the FORTRAN routine.
 * **containers.py** - Contains custom containers.
