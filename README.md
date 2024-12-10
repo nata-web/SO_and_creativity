@@ -15,8 +15,8 @@ Make sure your system has gfortran and f2py. Run the following commands before t
 
 `f2py3 --f90flags="-g -fdefault-integer-8 -O3" -m hebbF -c hebbclean.F90`
 
-## To run the code from Python without FORTRAN
-Current code is written to explicitly run with FORTRAN. To run the simulation in Python only see [SO-scaled-up](https://github.com/nata-web/SO-scaled-up/tree/main).
+## To run the simulations from Python without FORTRAN
+Current code is written to run the explicitly with FORTRAN (plots are generated in Python). To run the simulation in Python only see [SO-scaled-up](https://github.com/nata-web/SO-scaled-up/tree/main).
 
 ## 
 
