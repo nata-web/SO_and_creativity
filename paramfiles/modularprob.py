@@ -20,7 +20,7 @@ def getOptions():
         if CO.alphaGrid:
             CO.alpha_arr = [2e-7,5e-7,5e-6,5e-5] # NN,NA; N,A; NN,A; N,NA 
         else:
-            CO.alpha_arr = [5e-7]
+            CO.alpha_arr = [2e-7]
     CO.N_arr = [100] * len(CO.alpha_arr)         # sizes N of the weights matrix
     CO.steps_arr = np.array(CO.N_arr) * 10
     
