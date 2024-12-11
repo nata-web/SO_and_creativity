@@ -10,6 +10,14 @@ This repository contains the code used for the paper <b>"On the Use of Associati
 * **containers.py** - Contains custom containers.
 * **paramfiles/modularprob.py**  - Folder that contains all the parameters.
 
+To replicate the figures in the paper, modify the following parameters in the *paramfiles/modularprob.py* file:
+* For Figures 2-4, and 8-9:
+  * Set ```CO.alphaGrid = True``` and  ```CO.num_alphas = 1``` (for Fig. 3 also set ```plot6 = True``` in *SO_base.py*).
+* For Figures 5-6:
+  * Set ```CO.alphaGrid = False``` and  ```CO.num_alphas = 64```.
+* For Figure 7:
+  * Set ```CO.alphaGrid = False```,  ```CO.num_alphas = 1``` and ```CO.resets_arr = [5000]  * len(CO.alpha_arr)``` in line 33 of the code.
+
 ## To run the code from Python with FORTRAN:
 Make sure your system has gfortran and f2py. Run the following commands before the execution of the python code to compile the FORTRAN file:
 
