@@ -1,5 +1,5 @@
 # Untapped Potential in Self-Optimization of Hopfield Networks: The Creativity of Unsupervised Learning
-This repository contains the code used for the paper <b>"On the Use of Associative Memory in Hopfield Networks Designed to Solve Propositional Satisfiability Problems"</b> ([arXiv](https://arxiv.org/)). 
+This repository contains the code used for the paper <b>"Untapped Potential in Self-Optimization of Hopfield Networks: The Creativity of Unsupervised Learning"</b> ([arXiv](https://arxiv.org/abs/2501.04007)). 
 
 ## Content:
 
