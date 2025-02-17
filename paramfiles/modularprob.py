@@ -41,7 +41,7 @@ def getOptions():
         if CO.alphaGrid:
             CO.sim_seeds = [[53833]]*4
         else:
-            CO.sim_seeds = [[1914]]
+            CO.sim_seeds = [[53833]]
     
     return CO
 
