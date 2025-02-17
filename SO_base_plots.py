@@ -158,6 +158,20 @@ def plot_6(CO, result, runs, PO=containers.plotOptions(), mainTitle=True):
             plt.savefig(os.path.join(PO.path, CO.fig_name + '_Es_one_L.png'))
             plt.savefig(os.path.join(PO.path, CO.fig_name + '_Es_one_L.pdf'))
 
+        # Attractors visited - Figure 7
+        fig, ax = plt.subplots(figsize=[8,5])
+        plotEnergies(CO, ax, result.energies, runs)
+        ax.set_ylim([-158,-95])
+        ax.set_xlabel("Resets")
+        ax.set_ylabel("Energy")
+        ax.legend(loc="upper right", fontsize="small")
+        plt.tight_layout()
+        if PO.saveFigures:  
+            if CO.startState is not None:
+                CO.fig_name += "_startState" 
+        plt.savefig(os.path.join(PO.path, CO.fig_name + '_attractors.png'))
+        plt.savefig(os.path.join(PO.path, CO.fig_name + '_attractors.pdf'))
+
     ###### A 2-by-2 figure with energies before and after learning, visited attractor and their hoistogram
     fig, axs = plt.subplots(2,2,figsize=[10,10])
     
